@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: inherit; /* no underline */
+  padding: 0.7em;
+  border-radius: 5px;
+  transition: 200ms ease-in-out all;
+}
+
+a:hover {
+  color: inherit;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+header {
+  font-size: 1.3rem;
+  background-color: #121212;
+  height: 8vh;
+}
+header > img {
+  width: 100%;
+}
+header > div > a {
+  cursor: pointer;
+}
+
+main {
+  background-color: #000;
+  height: 92vh;
+}
+h1 {
+  color: #f5c518;
+}
+#carouselExampleCaptions {
+  width: 60%;
+}
+.carousel-item > img:hover {
+  transition: 200ms ease-in-out all;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.carousel-caption > h5 {
+  color: #f5c518;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  #carouselExampleCaptions {
+    width: 90%;
+  }
+}
